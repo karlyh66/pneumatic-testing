@@ -45,12 +45,11 @@ dt_l4.set(7)
 
 dt = DriveTrain(1.0, dt_left, dt_right, left_encoder=None, right_encoder=None)
 
-
-#Skeleton sensor poller
-#gyro = Gyro(1)
-# define sensor poller
-# sp = SensorPoller()
-
+#Pneumatics
+s_a = Solenoid(1);
+s_b = Solenoid(2);
+s_c = Solenoid(3);
+s_d = Solenoid(4);
 
 # Drive Controllers
 driver_stick = Attack3Joystick(0)
